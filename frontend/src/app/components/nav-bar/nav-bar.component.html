@@ -1,0 +1,16 @@
+<nav id="navbar" class="navbar">
+    <div class="container">
+      <div class="navbar-brand is-active">
+        <a class="navbar-item" routerLink="/home">HENDRA</a>
+        <a class="navbar-burger" role="button" aria-label="menu" aria-expanded="false"
+          [ngClass]="{ 'is-active': isActive }" (click)="toggle()">
+          <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span></a>
+      </div>
+      <div class="navbar-menu" [ngClass]="{ 'is-active': isActive }" (click)="toggle()">
+        <div class="navbar-end">
+          <a class="navbar-item" routerLink="/resume">Resume</a>
+          <a class="navbar-item" routerLink="/blog">Blog</a>
+        </div>
+      </div>
+    </div>
+  </nav>
