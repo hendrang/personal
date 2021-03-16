@@ -1,13 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
 
 /* Classic and Retro */
-$roof-terracotta: #A7414A;
-$bokara-grey: #282726;
-$gumbo: #6A8A82;
-$hacienda: #A37C27;
-$van-cleef: #563838;
+$malibu: #8ED3F4;
+$catskill-white: #E4EBF2;
+$astral: #328DAA;
+$natural-gray: #8A8683;
+$don-juan: #5A4D4C;
 
-$primary: $gumbo;
+$primary: $natural-gray;
+$info: $astral;
 
 @import '../node_modules/bulma/bulma.sass';
 // @import '../node_modules/quill/dist/quill.core.css';

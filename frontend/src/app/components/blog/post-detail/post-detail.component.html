@@ -1,2 +1,19 @@
-<p>post-detail works!</p>
-<p>{{data}}</p>
+<section class="section">
+    <div class="container py-4">
+        <div class="columns is-centered">
+            <div *ngIf="article" class="column is-8">
+                <h3 class="title is-4">{{article.title}}</h3>
+                <h5 class="subtitle is-size-7 has-text-weight-light">{{article.created | date:'mediumDate'}}</h5>
+                <!-- {{article.content}} -->
+                <markdown ngPreserveWhitespaces [data]="article.content"></markdown>
+                <!-- <markdown *ngIf="article" ngPreserveWhitespaces>
+                    {{article.content}}
+                </markdown> -->
+                <figure *ngIf="videoUrl" class="image is-16by9">
+                    <iframe class="has-ratio" width="640" height="360" [src]="videoUrl"
+                        frameborder="0" allowfullscreen></iframe>
+                </figure>
+            </div>
+        </div>
+    </div>
+</section>

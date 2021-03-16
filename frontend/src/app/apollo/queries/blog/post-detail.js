@@ -5,7 +5,9 @@ const POST_DETAIL_QUERY = gql`
     article(id: $id) {
       id
       title
+      created
       content
+      videoUrl
       image {
         url
       }

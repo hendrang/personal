@@ -37,6 +37,13 @@
     "category": {
       "model": "category",
       "via": "articles"
+    },
+    "subtitle": {
+      "type": "string",
+      "required": true
+    },
+    "videoUrl": {
+      "type": "string"
     }
   }
 }

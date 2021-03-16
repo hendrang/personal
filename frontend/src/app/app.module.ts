@@ -12,6 +12,8 @@ import { GraphQLModule } from './graphql.module';
 import { HttpClientModule } from '@angular/common/http';
 import { PostDetailComponent } from './components/blog/post-detail/post-detail.component';
 import { PostComponent } from './components/blog/post/post.component';
+import { NgxPaginationModule } from 'ngx-pagination';
+import { MarkdownModule } from 'ngx-markdown';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { PostComponent } from './components/blog/post/post.component';
     BrowserModule,
     AppRoutingModule,
     GraphQLModule,
-    HttpClientModule
+    HttpClientModule,
+    NgxPaginationModule,
+    MarkdownModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
