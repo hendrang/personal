@@ -37,6 +37,9 @@ export class PostComponent implements OnInit {
       .valueChanges.subscribe(result => {
         this.data = result.data;
         this.articles = this.data.articles;
+        this.articles = this.articles.slice().sort((a1, a2) => {
+          return new Date(a1.created) > new Date(a2.created) ? -1 : 1;
+        });
 
         this.loading = result.loading;
         this.errors = result.errors;
