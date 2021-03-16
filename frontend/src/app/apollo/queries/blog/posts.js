@@ -5,6 +5,8 @@ const POSTS_QUERY = gql`
     articles {
       id
       title
+      subtitle
+      created
       category {
         id
         name
