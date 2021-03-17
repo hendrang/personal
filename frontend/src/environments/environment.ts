@@ -4,8 +4,8 @@
 
 export const environment = {
   production: false,
-  graphqlUrl: 'http://localhost:1337/graphql',
-  // graphqlUrl: 'https://hendrang-strapi.herokuapp.com/graphql',
+  // graphqlUrl: 'http://localhost:1337/graphql',
+  graphqlUrl: 'https://hendrang-strapi.herokuapp.com/graphql',
 };
 
 /*

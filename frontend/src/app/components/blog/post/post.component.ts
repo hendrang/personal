@@ -24,7 +24,7 @@ export class PostComponent implements OnInit {
       currentPage: 1,
       totalItems: this.articles.length,
       isFirstPage: true,
-      isLastPage: false,
+      isLastPage: this.articles.length <= 15,
     };
 
   }
