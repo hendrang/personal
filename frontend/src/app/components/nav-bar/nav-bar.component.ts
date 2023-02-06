@@ -26,6 +26,10 @@ export class NavBarComponent implements OnInit {
     this.isActive = !this.isActive;
   }
 
+  openBlog(): void {
+    window.open("https://bloqku.com/", "_blank");
+  }
+
   ngOnDestroy() {
     this.resizeSubscription$.unsubscribe();
   }
