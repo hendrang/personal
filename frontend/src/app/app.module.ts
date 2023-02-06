@@ -9,7 +9,6 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
 import { NgxPaginationModule } from 'ngx-pagination';
-import { MarkdownModule } from 'ngx-markdown';
 
 @NgModule({
   declarations: [
@@ -23,8 +22,8 @@ import { MarkdownModule } from 'ngx-markdown';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    NgxPaginationModule,
-    MarkdownModule.forRoot()
+    NgxPaginationModule
+    // MarkdownModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
