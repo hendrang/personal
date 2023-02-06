@@ -13,7 +13,7 @@
     <div class="navbar-menu" [ngClass]="{ 'is-active': isActive }" (click)="toggle()">
       <div class="navbar-end">
         <a class="navbar-item" routerLink="/resume">Resume</a>
-        <a class="navbar-item" routerLink="/blog">Blog</a>
+        <a class="navbar-item" (click)="openBlog()">Blog</a>
       </div>
     </div>
   </div>
